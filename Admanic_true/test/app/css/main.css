@@ -489,6 +489,7 @@ header {
 
 .input_name {
   float: right;
+  width: 250px;
   position: relative; }
   .input_name input {
     width: 250px;
@@ -581,7 +582,6 @@ header {
     font-size: 17px;
     text-align: center;
     border-radius: 5px;
-    float: right;
     display: block;
     font-family: "LatoRegular"; }
   .but_submit a:after {
@@ -657,4 +657,7 @@ header.navbar-fixed-top .logo_top {
   margin: 10px 0px; }
 
 .main_mnu_button {
-  display: none; }
+  display: none;
+  margin: 0 auto;
+  border: none;
+  background: #fff; }

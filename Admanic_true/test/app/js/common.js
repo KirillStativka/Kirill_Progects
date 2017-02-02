@@ -21,7 +21,7 @@ var onMapClickHandler = function (event) {
     that.find('iframe').css("pointer-events", "auto");
     // Handle the mouse leave event
     that.on('mouseleave', onMapMouseleaveHandler);
-}
+  }
   // Enable map zooming with mouse scroll when the user clicks the map
   $('section.maps_location').on('click', onMapClickHandler);
 
@@ -29,14 +29,19 @@ var onMapClickHandler = function (event) {
 
 $(window).scroll(function(){
 
-	if( $('body').scrollTop() > 100 ){
+	if( $('body').scrollTop() > 700 ){
 		$('header').addClass('navbar-fixed-top');
 	}else{
 		$('header').removeClass('navbar-fixed-top');
 	}
 
 });
-
+$('a[href^="#"]').click(function(){
+    //Сохраняем значение атрибута href в переменной:
+    var target = $(this).attr('href');
+    $('html, body').animate({scrollTop: $(target).offset().top}, 800);
+    return false;
+  });
 /*
 
 $(window).scroll(function(){
