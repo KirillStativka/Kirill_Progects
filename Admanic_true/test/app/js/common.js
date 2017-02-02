@@ -26,7 +26,7 @@ var onMapClickHandler = function (event) {
   $('section.maps_location').on('click', onMapClickHandler);
 
 // fixed header
-/*
+
 $(window).scroll(function(){
 
 	if( $('body').scrollTop() > 100 ){
@@ -36,24 +36,41 @@ $(window).scroll(function(){
 	}
 
 });
+
+/*
+
+$(window).scroll(function(){
+
+	if( $('body').scrollTop() > 200 ){
+		$('.top_mnu').addClass('navbar-none-top');
+		$('.top_mnu').addClass('fixed_wrap');
+		$('.sandwich').addClass('navbar-block-top');
+	}else{
+		$('.top_mnu').removeClass('navbar-block-top');
+		$('.top_mnu').removeClass('fixed_wrap');
+		$('.sandwich').removeClass('navbar-block-top');
+	}
+
+});
+
+$(".top_mnu ul a").click(function() {
+	$(".top_mnu").fadeOut(600);
+	$(".sandwich").toggleClass("active");
+	$(".top_text").css("opacity", "1");
+}).append("<span>");
+
+$(".toggle_mnu").click(function() {
+	if ($(".top_mnu").is(":visible")) {
+		$(".top_text").css("opacity", "1");
+		$(".top_mnu").fadeOut(600);
+		$(".top_mnu li a").removeClass("fadeInUp animated");
+	} else {
+		$(".top_text").css("opacity", ".1");
+		$(".top_mnu").fadeIn(600);
+		$(".top_mnu li a").addClass("fadeInUp animated");
+	};
+});
 */
-	//E-mail Ajax Send
-	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
 
 	//Chrome Smooth Scroll
 	try {

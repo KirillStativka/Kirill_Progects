@@ -60,7 +60,30 @@
 		-ms-animation: none !important;
 		animation: none !important;
 	}
-
+	.chair {
+		height: 100%;
+	}
+	.table .decription {
+		position: absolute;
+		right: 45px;
+		top: 315px;
+	}
+	.table.perks .decription {
+		position: absolute;
+		top: 170px;
+		right: 65px;
+	}
+	.footer_nav ul li {
+		display: block;
+	}
+	.owl-pagination {
+		position: absolute;
+		right: 0px;
+		top: 50%;
+	}
+	.slogan_top {
+		width: 100%;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -69,6 +92,15 @@
 		font-size: 14px;
 		word-spacing: 10px;
 		line-height: 24px;	
+	}
+	.table .img_box img {
+		width: 100%;
+	}
+	.table .decription {
+		top: 70%;
+	}
+	.table.perks .decription {
+		top: 70%;
 	}
 }
 
