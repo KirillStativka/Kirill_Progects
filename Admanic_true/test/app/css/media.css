@@ -2,7 +2,28 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	.top_nav ul {
+		display: none;
+		position: absolute;
+		width: 100%;
+		background-color: #fff;
+		margin-top: 40px;
+		z-index: 11;
+		left: 0px;
+		border-bottom: 1px solid #ff4622;
+	}
+	.top_nav ul li {
+		display: block;
+		width: 100%;
+		margin-left: 0px;
+		padding: 1px;
+		display: block;
+	}
+	.top_nav ul li a {
+		width: 100%;
+		display: block;
+		background-color: #fff;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -99,6 +120,12 @@
 		margin: 0px auto;
 		list-style-type: none;
 		display: block;
+	}
+	.main_mnu_button {
+		display: block;
+		margin: 0 auto;
+		border: none;
+		background: #fff;
 	}
 }
 

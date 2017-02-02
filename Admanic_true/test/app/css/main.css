@@ -655,3 +655,6 @@ header.navbar-fixed-top .logo_top {
 
 .img_box.first {
   margin: 10px 0px; }
+
+.main_mnu_button {
+  display: none; }

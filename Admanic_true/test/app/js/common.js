@@ -71,6 +71,10 @@ $(".toggle_mnu").click(function() {
 	};
 });
 */
+$(".main_mnu_button").click(function (){
+	$(".top_nav ul").slideToggle();
+}); 
+
 
 if (screen.width < '800') {
 	$('table tr > td').attr( 'rowspan', '1' );
