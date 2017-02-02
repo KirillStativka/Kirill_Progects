@@ -21,7 +21,7 @@ var onMapClickHandler = function (event) {
     that.find('iframe').css("pointer-events", "auto");
     // Handle the mouse leave event
     that.on('mouseleave', onMapMouseleaveHandler);
-  }
+}
   // Enable map zooming with mouse scroll when the user clicks the map
   $('section.maps_location').on('click', onMapClickHandler);
 
@@ -71,6 +71,10 @@ $(".toggle_mnu").click(function() {
 	};
 });
 */
+
+if (screen.width < '800') {
+	$('table tr > td').attr( 'rowspan', '1' );
+};
 
 	//Chrome Smooth Scroll
 	try {

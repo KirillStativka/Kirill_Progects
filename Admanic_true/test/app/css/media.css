@@ -84,6 +84,22 @@
 	.slogan_top {
 		width: 100%;
 	}
+	.slogan_top .star_img:before {
+		margin: 0 auto;
+	}
+	header.navbar-fixed-top .logo_top {
+		margin: 25px auto  10px auto;
+		float: none;
+	}
+	header.navbar-fixed-top .top_nav {
+		margin: 40px 0px;
+		float: none;
+	}
+	.top_nav ul li {
+		margin: 0px auto;
+		list-style-type: none;
+		display: block;
+	}
 }
 
 /* Extra Small Devices, Phones */
